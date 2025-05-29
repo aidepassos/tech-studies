@@ -18,6 +18,9 @@ jobs:
           with:
             node-version: '18.19.1'
 
+        - name: Clear the dist directory
+          run: rm -rf dist
+
         - name: Install dependencies
           run: npm install
 
