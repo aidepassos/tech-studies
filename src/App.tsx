@@ -4,16 +4,17 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <h1 className="text-5xl font-bold text-blue-600">
-          Hello World!
-        </h1>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center p-4 sm:p-8 font-sans">
+      <div className="flex flex-col sm:flex-row w-full max-w-6xl bg-white bg-opacity-90 rounded-lg shadow-2xl overflow-hidden">
+        <Link to="/tech-studies/one">
+          Go to Lesson 1
+        </Link>
+        <br />
+        <Link to="/tech-studies/one">
+          Go to Lesson 2
+        </Link>
       </div>
-      <Link to="/tech-studies/one" className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"      >
-        Go to Lesson 1
-      </Link>
-    </>
+    </div>
   )
 }
 
